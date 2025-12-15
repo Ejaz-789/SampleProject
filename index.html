@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Cards UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f6f8ff, #eef1ff);
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #222;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #666;
+      font-size: 16px;
+    }
+
+    /* Cards Section */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .card button {
+      margin-top: 20px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      background: #4f46e5;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .card button:hover {
+      background: #3730a3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jane Bloglife</h1>
+    <p>A simple and elegant card-based layout</p>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <h2>Fashion Tips</h2>
+      <p>Discover modern fashion trends, styling tips, and daily outfit inspiration.</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h2>Lifestyle</h2>
+      <p>Healthy routines, productivity hacks, and simple habits for a better life.</p>
+      <button>Explore</button>
+    </div>
+
+    <div class="card">
+      <h2>Travel Stories</h2>
+      <p>Minimal travel experiences, planning guides, and peaceful destinations.</p>
+      <button>View Posts</button>
+    </div>
+
+    <div class="card">
+      <h2>Personal Growth</h2>
+      <p>Mindset, motivation, and learning paths to improve yourself daily.</p>
+      <button>Start Now</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Jane Bloglife — Simple HTML & CSS
+  </footer>
+
+</body>
+</html>
